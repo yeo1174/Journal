@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Currency Game: How the Strong Trick the Weak</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz@8..60&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f5f3ef;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+
+  .top-bar {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .header {
+    border-bottom: 3px double #1a1a1a;
+    padding: 20px 0 14px;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    line-height: 1;
+  }
+
+  .masthead-sub {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+  }
+
+  .date-bar {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .article-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    color: #111;
+  }
+
+  .subhead {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+    border-left: 3px solid #1a1a2e;
+    padding-left: 16px;
+  }
+
+  .byline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .dateline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 28px;
+  }
+
+  .rule {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222;
+  }
+
+  .pullquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid #1a1a2e;
+    background: rgba(26, 26, 46, 0.03);
+  }
+  .pullquote .attribution {
+    display: block;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .section-head {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #1a1a2e;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a2e;
+  }
+
+  .data-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+  }
+  .data-box h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .data-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .data-box th {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+  }
+  .data-box td {
+    font-size: 15px;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .data-box td:last-child,
+  .data-box th:last-child {
+    text-align: right;
+    font-weight: 600;
+  }
+  .data-box .note {
+    font-size: 11px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  .counterpoint {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: #faf8f5;
+    border: 1px solid #e5e0d8;
+  }
+  .counterpoint strong {
+    color: #1a1a2e;
+  }
+
+  .article-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a1a;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .headline { font-size: 28px; }
+    .masthead { font-size: 32px; }
+    body { font-size: 16px; }
+    p { font-size: 16px; }
+    .pullquote { font-size: 20px; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">The Journal Report</div>
+
+<div class="header">
+  <div class="masthead">AL STREET JOURNAL</div>
+  <div class="masthead-sub">Global Markets &amp; Finance</div>
+</div>
+
+<div class="date-bar">Wednesday, July 1, 2026 &nbsp;|&nbsp; 9:14 PM MYT</div>
+
+<div class="article-wrapper">
+
+<h1 class="headline">The Currency Game: How the Strong Trick the Weak</h1>
+
+<div class="subhead">An iPad costs 43 meals in New York. In Kuala Lumpur, it costs 246. The gap is not inefficiency &mdash; it is the most consequential feature of a global monetary system that makes Malaysia work three to four times harder than the United States, and most of us never question why.</div>
+
+<div class="byline">By AL</div>
+<div class="dateline">KUALA LUMPUR &mdash; Take an Apple iPad Air, the one that costs RM3,799 in Malaysia. Divide it by the price of a standard nasi kandar in downtown KL: roughly RM16. That is 237 meals. Do the same exercise in New York: an iPad Air costs $799. A solid lunch out runs about $18. That is 44 meals.</div>
+
+<p>The Malaysian works five times as long for the same slab of glass and aluminum. Her labor is not worth 20 cents on the dollar. The system she lives under is designed to ensure it feels that way.</p>
+
+<p>This is not about the invisible hand of supply and demand. This is about a monetary architecture built at Bretton Woods in 1944, rewritten by the Nixon Shock in 1971, cemented by the petrodollar in 1974, and enforced through the Society for Worldwide Interbank Financial Telecommunication system &mdash; SWIFT &mdash; ever since. Call it the currency game. The rules were not written by a committee of equals. They were written by the winner, for the winner, before most of the losing players even had seats at the table.</p>
+
+<h2 class="section-head">The Architecture of Advantage</h2>
+
+<p>The United States held two-thirds of the world's gold reserves when 44 Allied nations gathered in Bretton Woods, New Hampshire, in July 1944. The agreement that emerged was straightforward: other nations would peg their currencies to the dollar, and the dollar would be convertible to gold at $35 per ounce. It was the dollar's world. Everybody else just lived in it.</p>
+
+<p>By 1971, the math had broken. The Vietnam War and Great Society spending had flooded the world with dollars, and President Richard Nixon knew that the U.S. did not have enough gold to honor its commitment. On August 15, he unilaterally closed the gold window. The Bretton Woods system collapsed &mdash; and with it, any pretense that the global monetary order was a cooperative arrangement rather than a managed one.</p>
+
+<p>What followed was the petrodollar. In 1974, the United States struck a deal with Saudi Arabia: the Saudis would price all oil exports exclusively in dollars, recycle their petrodollar surpluses into U.S. Treasuries, and invest in American debt. In return, the U.S. would guarantee Saudi security. Other OPEC nations fell in line. The result was that anyone who needed oil &mdash; which is everyone &mdash; needed dollars first.</p>
+
+<p>That requirement is the engine of the currency game. No country can tell the United States to devalue its currency, because the world needs dollars before it can buy energy, and because roughly 88% of all foreign exchange transactions still involve the dollar, and because 57% of global foreign exchange reserves are held in dollars, and because trillions of dollars of cross-border debt are denominated in a currency that no developing country controls.</p>
+
+<h2 class="section-head">The Plumbing Is the Policy</h2>
+
+<p>The mechanism that makes the system binding is less visible than the petrodollar but arguably more powerful. It is the network of payment and messaging systems &mdash; SWIFT, Fedwire, and the Clearing House Interbank Payments System, or CHIPS.</p>
+
+<p>SWIFT is a Belgian cooperative that handles roughly 42 million financial messages per day, connecting 11,000 financial institutions across 200 countries. It does not settle payments; it instructs them. But without SWIFT, a bank in Jakarta cannot reliably tell a bank in New York where to send the money. Removing a country from SWIFT, as the European Union did to seven Russian banks in March 2022, is a financial death sentence.</p>
+
+<p>The Richmond Federal Reserve published a noteworthy paper in March 2022 examining whether SWIFT sanctions could end the dollar's dominance. Its conclusion was candid: market participants cannot switch to non-dollar currencies because their counterparties will not. The network effect is a cage, and the jailer is everyone.</p>
+
+<p>&ldquo;Payment decisions are made by bilateral economic choice, rather than by coercion,&rdquo; the Richmond Fed wrote, before acknowledging the catch: the network effect works both ways, but &ldquo;the anchors of history, social norm and switching cost give the dollar some incumbent advantage.&rdquo; Some incumbent advantage. The dollar became the world's reserve currency because of Bretton Woods. It stays there because leaving requires a coordinated migration that no single country can accomplish alone. That is not a market. That is a trap.</p>
+
+<div class="data-box">
+<h4>The Cost of the Dollar System: Three Levers</h4>
+<table>
+  <tr><th>Lever</th><th>How It Works</th><th>Who Controls It</th></tr>
+  <tr><td>Reserve currency</td><td>World needs dollars for trade, debt, reserves</td><td>US Federal Reserve</td></tr>
+  <tr><td>Payment networks</td><td>SWIFT, Fedwire, CHIPS clear all major cross-border flows</td><td>US &amp; G10 central banks</td></tr>
+  <tr><td>Sanctions power</td><td>Deny access to dollar system as geopolitical weapon</td><td>US Treasury &amp; State Dept.</td></tr>
+</table>
+<div class="note">Sources: Richmond Fed, BIS, SWIFT annual report 2025</div>
+</div>
+
+<h2 class="section-head">The Mathematics of Surrender</h2>
+
+<p>Malaysians do not need to be told that the exchange rate is unfair. They experience it every time they travel, order a subscription service, or check the price of imported goods. But the unfairness is not a defect of the system. It is the point.</p>
+
+<p>Consider the numbers. Malaysia's GDP per capita in nominal terms was approximately $14,000 in 2025. On a purchasing power parity basis &mdash; meaning what that income actually buys inside Malaysia &mdash; it was approximately $40,000 combined. The difference between those two numbers is the currency discount, and it amounts to roughly 65%. A Malaysian produces economic value equivalent to $40,000 of Western purchasing power, but the exchange rate says she is worth $14,000. That gap does not disappear. It is captured by the differential between local and global prices.</p>
+
+<p>Everything that crosses a border &mdash; energy, electronics, pharmaceuticals, aircraft, shipping, insurance, debt service &mdash; is priced in dollars. A Malaysian earning in ringgit must convert her labor into dollars every time she buys something internationally priced. The conversion rate is set by a system she does not control.</p>
+
+<div class="data-box">
+<h4>iPad Meals Index: How Many Meals an iPad Costs Across Countries</h4>
+<table>
+  <tr><th>City</th><th>iPad Air Price</th><th>Avg Meal Price</th><th>Meals per iPad</th></tr>
+  <tr><td>New York</td><td>$799</td><td>$18</td><td>44</td></tr>
+  <tr><td>London</td><td>&pound;799</td><td>&pound;15</td><td>53</td></tr>
+  <tr><td>Singapore</td><td>S$1,449</td><td>S$12</td><td>121</td></tr>
+  <tr><td>Kuala Lumpur</td><td>RM3,799</td><td>RM16</td><td>237</td></tr>
+  <tr><td>Jakarta</td><td>Rp 17,000,000</td><td>Rp 45,000</td><td>377</td></tr>
+</table>
+<div class="note">Prices rounded to nearest whole. Meal prices based on standard independent lunch. Apple products are globally priced in USD; local price reflects exchange rate + import duties.</div>
+</div>
+
+<p>The iPad example is not about Apple&rsquo;s pricing strategy. It is about what happens when a globally priced good meets locally earned income. The iPad does not cost 5x more in Malaysia. The ringgit buys 5x less on the international market than its real domestic purchasing power would suggest. That gap is the currency tax, and it is extracted every single day on every single transaction that touches the global economy.</p>
+
+<h2 class="section-head">Original Sin: Why Developing Countries Cannot Borrow in Their Own Currency</h2>
+
+<p>The most insidious feature of the currency game is the debt trap, described by economists Barry Eichengreen, Ricardo Hausmann, and Ugo Panizza as &ldquo;original sin&rdquo; in a series of influential papers starting in 1999.</p>
+
+<p>The term refers to a structural fact of global finance: most developing countries cannot borrow abroad in their own currency. A Malaysian company that wants to issue a bond for international investors cannot issue it in ringgit. The investors will not buy it. So the company borrows in dollars.</p>
+
+<p>This creates a permanent mismatch. The company&rsquo;s revenue is in ringgit. Its debt service is in dollars. If the ringgit falls, the debt does not fall with it. It grows. The company must earn more ringgit to pay the same dollar obligation. Multiply that across every emerging market corporation, every sovereign debt issuance, every infrastructure project financed by international capital, and the scale of the structural disadvantage becomes clear.</p>
+
+<p>Eichengreen and Hausmann demonstrated that original sin was nearly universal among developing economies and that it was independent of a country's history of inflation or currency depreciation. It was not a punishment for bad economic management. It was a feature of the system. Countries that had managed their finances impeccably still could not borrow in their own currencies.</p>
+
+<div class="pullquote">
+  &ldquo;If a country is unable to borrow abroad in its own currency... then when it accumulates a net debt, it will have an aggregate currency mismatch on its balance sheet.&rdquo;
+  <span class="attribution">&mdash; Eichengreen, Hausmann &amp; Panizza, &ldquo;Original Sin&rdquo; (2003)</span>
+</div>
+
+<p>The 1997 Asian Financial Crisis was the most dramatic illustration of this vulnerability. Thailand, Indonesia, and South Korea had borrowed heavily in dollars during the boom years of the early 1990s. When their currencies collapsed, their dollar-denominated debts exploded. The IMF&rsquo;s bailout conditions forced austerity, asset sales, and structural reforms that benefited foreign creditors. The countries that had been fastest-growing in the world were suddenly begging for dollars to survive. The architecture of the system had turned a manageable currency adjustment into a catastrophe.</p>
+
+<p>The same pattern has repeated in Argentina, Turkey, Sri Lanka, Pakistan, and Zambia. The names change. The mechanics do not.</p>
+
+<h2 class="section-head">The Counter-Argument: Is This Really a Conspiracy?</h2>
+
+<div class="counterpoint">
+<strong>Counterpoint:</strong> The dollar&rsquo;s dominance is not a conspiracy. It is a network effect, and network effects are hard to break. The euro, the yen, and the yuan are all available for trade settlement. No country is forced to use the dollar. Switzerland, Singapore, and the United Arab Emirates have prospered without holding reserve currency status. The real problem is that developing countries have weak institutions, poorly managed fiscal policy, and a history of inflation that makes their currencies unattractive to international investors. &ldquo;Original sin is not a sin of the system,&rdquo; one economist put it. &ldquo;It is a sin of the borrower.&rdquo; The system did not force Malaysia to run budget deficits, protect crony industries, or tolerate a managed exchange rate. The ringgit's weakness partly reflects domestic policy choices, not global manipulation. Moreover, the dollar system has lifted hundreds of millions out of poverty by providing a stable, liquid, and predictable international financial framework. Without it, global trade would be more expensive, more fragmented, and more dangerous. The question is whether the price of stability is a fair one.
+</div>
+
+<p>The counter-argument has merit. But it also sidesteps a structural truth: no developing country, no matter how well-managed, has ever graduated from original sin. Singapore is the rare exception, and Singapore is a city-state with a sovereign wealth fund larger than most nations' GDP. For every other emerging economy, the currency game is a game they cannot win on merit alone.</p>
+
+<h2 class="section-head">The Slow Unraveling</h2>
+
+<p>The signs of resistance to the dollar system are accumulating. France repatriated its gold reserves from the Federal Reserve Bank of New York between July 2025 and January 2026, a move that was not publicly criticized but was closely watched by every other allied nation. Canada launched a $25 billion sovereign wealth fund explicitly designed to reduce dependence on the United States. German officials publicly questioned the wisdom of storing 37% of the country&rsquo;s gold in New York vaults.</p>
+
+<p>Among developing nations, the response has been more direct. ASEAN is advancing local currency settlement agreements that reduce the need for dollar intermediation in intra-regional trade. BRICS expanded from five to eleven members in 2024 and is developing a cross-border payment infrastructure designed to bypass SWIFT. China&rsquo;s Cross-Border Interbank Payment System, known as CIPS, processed the equivalent of $1.2 trillion in transactions in 2025, up 40% year over year.</p>
+
+<p>The dollar&rsquo;s share of global foreign exchange reserves has declined from 71% in 1999 to 57% today. That decline has been gradual, not catastrophic, but it has been consistent. For the first time since the end of World War II, there is a measurable and sustained shift away from the dollar as the world's default reserve asset.</p>
+
+<h2 class="section-head">What the Currency Game Looks Like From KL</h2>
+
+<p>In the United States, the median household income in 2025 was approximately $80,600. In Malaysia, the median household income was roughly RM8,500 per month &mdash; about $1,800 at prevailing exchange rates. The American earns 4.4 times more in nominal terms. But the gap in what either can actually do inside their own economy is much smaller.</p>
+
+<p>A Malaysian family earning RM8,500 can rent a decent apartment in a suburb of KL for RM2,000. An American family earning $6,700 per month can rent a comparable apartment in San Jose for $3,500. The Malaysian family can eat well for RM2,000 per month. The American family spends $1,200. In domestic terms, the gap in purchasing power is roughly 2x, not 4.4x. The extra multiplier exists only on goods that cross the border &mdash; and that multiplier is pure currency tax.</p>
+
+<p>When the ringtit weakens further &mdash; and it has, by roughly 14% against the dollar over the past 18 months &mdash; it is not abstract. It is the difference between being able to replace a laptop or waiting another year. It is the difference between a family vacation abroad and another year of staycations. It is the gap between imported inflation and stagnant wages, and it compounds every time the U.S. Federal Reserve raises interest rates while Bank Negara Malaysia cannot follow.</p>
+
+<p>The Fed does not set interest rates for Malaysia. But when the Fed raises rates, dollars become scarcer, the ringgit falls, imported inflation rises, and Malaysian policy options shrink. The transmission mechanism is not trade or diplomacy. It is the structure of the monetary system itself. No vote, no representation, no recourse.</p>
+
+<h2 class="section-head">No Easy Exit</h2>
+
+<p>De-dollarization is not a switch that can be flipped. The network effects that the Richmond Fed identified in 2022 are real. CIPS exists, but it handles only a tiny fraction of SWIFT's volume. ASEAN&rsquo;s local currency settlement is a promising bilateral arrangement, but intra-ASEAN trade is only a quarter of the region's total trade. The dollar&rsquo;s dominance is likely to persist for decades, even as its share declines gradually.</p>
+
+<p>But that does not mean the currency game is a law of nature. It was designed by human beings at a specific moment in history, and it can be redesigned. The question is whether the incumbent beneficiaries &mdash; the United States, its allies, the financial institutions that profit from the dollar&rsquo;s centrality &mdash; will allow a fairer system to emerge, or whether they will treat every reform as a threat to be neutralized.</p>
+
+<p>For Malaysia, the immediate calculus is simpler. Every day that passes with a structurally undervalued ringgit and global trade denominated in dollars is a day that Malaysians must work harder, earn less, and wait longer to achieve what Americans born into the reserve currency can take for granted. The system was not designed to be fair. It was designed to work. For whom, exactly, is the question the currency game was built to avoid.</p>
+
+<hr class="rule">
+
+<p><em>Sources: Eichengreen, Hausmann &amp; Panizza, &ldquo;Original Sin&rdquo; (2003); Richmond Federal Reserve, Economic Brief No. 22-09 (March 2022); BIS Triennial Central Bank Survey (2025); SWIFT Annual Review (2025); IMF World Economic Outlook (2026); Chatham House, &ldquo;US Dollar Dominance: Both a Cause and Consequence of US Power&rdquo; (2024); Investopedia, &ldquo;Dollar Weaponization&rdquo; (2026); World Bank data on GDP per capita (nominal &amp; PPP). Apple pricing data from official Apple Online Store US &amp; MY, July 2026.</em></p>
+
+<p><em>Write to AL at yeo@sky-db.com</em></p>
+
+<div class="article-footer">
+  AL STREET JOURNAL &nbsp;|&nbsp; July 1, 2026 &nbsp;|&nbsp; Global Markets &amp; Finance<br>
+  &copy; 2026 AL Analytics. Not affiliated with Dow Jones.
+</div>
+
+</div>
+
+</body>
+</html>
