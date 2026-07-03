@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Forever Deficit: From Petrodollars to AI, How America Keeps the World Paying Its Bills</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz@8..60&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f5f3ef;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+
+  .top-bar {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .header {
+    border-bottom: 3px double #1a1a1a;
+    padding: 20px 0 14px;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    line-height: 1;
+  }
+
+  .masthead-sub {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+  }
+
+  .date-bar {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .article-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    color: #111;
+  }
+
+  .subhead {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+    border-left: 3px solid #1a1a2e;
+    padding-left: 16px;
+  }
+
+  .byline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .dateline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 28px;
+  }
+
+  .rule {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222;
+  }
+
+  .pullquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid #1a1a2e;
+    background: rgba(26, 26, 46, 0.03);
+  }
+  .pullquote .attribution {
+    display: block;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .section-head {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #1a1a2e;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a2e;
+  }
+
+  .data-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+  }
+  .data-box h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .data-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .data-box th {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+  }
+  .data-box td {
+    font-size: 15px;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .data-box td:last-child,
+  .data-box th:last-child {
+    text-align: right;
+    font-weight: 600;
+  }
+  .data-box .note {
+    font-size: 11px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  .counterpoint {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: #faf8f5;
+    border: 1px solid #e5e0d8;
+  }
+  .counterpoint strong {
+    color: #1a1a2e;
+  }
+
+  .article-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a1a;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .headline { font-size: 28px; }
+    .masthead { font-size: 32px; }
+    body { font-size: 16px; }
+    p { font-size: 16px; }
+    .pullquote { font-size: 20px; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">The Journal &mdash; Special Investigation</div>
+
+<div class="header">
+  <a href="/Journal/" style="text-decoration:none;color:inherit;"><div class="masthead">AL STREET JOURNAL</div></a>
+  <div class="masthead-sub">Global Markets &amp; Geopolitics</div>
+</div>
+
+<div class="date-bar">Thursday, July 3, 2026 &nbsp;|&nbsp; 11:46 PM MYT</div>
+
+<div class="article-wrapper">
+
+<h1 class="headline">The Forever Deficit: From Petrodollars to AI, How America Keeps the World Paying Its Bills</h1>
+
+<div class="subhead">In 1974, Washington struck a secret deal with Riyadh: oil would be priced in dollars, and Saudi Arabia would recycle its surpluses into U.S. Treasury bonds. Half a century later, a different mechanism serves the same function. The AI capital boom is attracting trillions in global savings into American tech equities and debt -- and it may not be an accident.</div>
+
+<div class="byline">By AL</div>
+<div class="dateline">KUALA LUMPUR &mdash; There is a question that should haunt anyone who studies the architecture of postwar American power: how does a country run persistent current account deficits for half a century without suffering a funding crisis?</div>
+
+<p>The United States has not recorded an annual current account surplus since 1991. The deficit hit $1.12 trillion in 2025. The country's net international investment position -- the difference between what Americans own abroad and what foreigners own in America -- stood at negative $27.5 trillion at the end of that year. By any conventional measure, the United States is the world's largest debtor, and has been for decades.</p>
+
+<p>And yet the dollar remains the world's dominant reserve currency. U.S. Treasury bonds remain the safest asset on earth. And every year, trillions of dollars in foreign capital flow into American financial markets, financing deficits that would bankrupt any other nation.</p>
+
+<p>Why?</p>
+
+<p>The answer, viewed across a fifty-year arc, is that Washington has proven remarkably adept at constructing structural mechanisms that compel or incentivize the rest of the world to finance American consumption. The first of these mechanisms was the petrodollar system. The second -- still unfolding -- may be the artificial intelligence boom.</p>
+
+<p>The two share a common logic. Both create an irresistible gravitational pull that draws global savings into dollar-denominated assets. Both are the product of deliberate policy choices dressed in the language of markets and technology. And both serve the same ultimate purpose: ensuring that America can continue to spend more than it earns, indefinitely, without facing the consequences that would visit any other debtor.</p>
+
+<h2 class="section-head">The Architecture of the Petrodollar</h2>
+
+<p>To understand the AI parallel, one must first understand what was built in 1974.</p>
+
+<p>On August 15, 1971, President Richard Nixon ended the convertibility of dollars into gold. The Bretton Woods system, which had anchored the global monetary order since 1944, collapsed overnight. The dollar was no longer backed by gold. Washington needed a new anchor -- something that would ensure global demand for dollars even without gold convertibility.</p>
+
+<p>The answer, arrived at through a series of negotiations that culminated in 1974, was oil.</p>
+
+<p>In June 1974, Secretary of State Henry Kissinger, Treasury Secretary William Simon, and Secretary of Defense James Schlesinger met with Saudi Prince Fahd bin Abdulaziz and senior Saudi officials in Washington. What emerged has been called many things: a framework for cooperation, a joint commission on economic cooperation, a secret agreement. The broad contours are not seriously disputed by historians. The United States would provide Saudi Arabia with military protection, advanced weapons, and diplomatic backing. In return, Saudi Arabia would price its oil exclusively in U.S. dollars and invest its massive oil surpluses in U.S. Treasury securities.</p>
+
+<div class="pullquote">
+  The deal was elegant in its simplicity: every country on earth needed oil. If oil was priced in dollars, every country on earth needed dollars -- and those dollars would eventually find their way back into U.S. government debt.
+</div>
+
+<p>David E. Spiro, in his 1999 book <em>The Hidden Hand of American Hegemony</em>, demonstrated through exhaustive archival research that the arrangement was deliberate policy, not market accident. The Treasury Department, he showed, actively worked to ensure that petrodollar surpluses were recycled into U.S. government securities rather than spent on goods that might fuel inflation in the American economy. The term &quot;recycling&quot; was itself a euphemism: oil-consuming nations paid dollars for oil; oil-producing nations deposited those dollars in Western banks or purchased Treasury bonds; the dollars then financed American consumption and investment. The circle was closed.</p>
+
+<p>Between 1974 and 1981, OPEC accumulated $450 billion in current account surpluses. Ninety percent went to the Arab Gulf states and Libya. Huge volumes were invested in U.S. Treasury securities, often through discreet government channels. By 2015, OPEC governments had accumulated approximately $300 billion in U.S. government debt. The figure understates the true magnitude of petrodollar recycling, because it does not capture the indirect flows through the Eurodollar market, where petrodollars deposited in London and Zurich were lent onward to developing countries, ensuring that global trade and debt remained dollar-denominated throughout.</p>
+
+<p>William Greider, the political journalist, summarized the dynamic with brutal clarity: &quot;Banks collected the deposits of revenue-rich OPEC governments and lent the money to developing countries so they could avoid bankruptcy.&quot; The entire system was built on a simple premise: the world would keep buying dollars to pay for oil, and the dollars would keep flowing back into American assets. The United States would never have to repay its debts in any meaningful sense, because the debts were denominated in its own currency, and the system ensured a steady stream of new buyers.</p>
+
+<h2 class="section-head">The AI Pump: Same Logic, New Mechanism</h2>
+
+<p>Fast forward to 2026. The petrodollar system has not collapsed, but it has been visibly fraying. China, Russia, Brazil, and the BRICS bloc are actively constructing alternative payment systems. Saudi Arabia has signaled openness to pricing oil in currencies other than the dollar. The share of global central bank reserves held in dollars has declined from roughly 71% in 2000 to approximately 58% today.</p>
+
+<p>And yet, something remarkable has happened in parallel. A new magnet for global capital has emerged, centered almost entirely in the United States: artificial intelligence.</p>
+
+<div class="data-box">
+<h4>The Two Eras: Petrodollar System vs. AI Capital Magnet</h4>
+<table>
+  <tr><th></th><th>Petrodollar System (1974-2015)</th><th>AI Capital Magnet (2022-2026)</th></tr>
+  <tr><td>Core mechanism</td><td>Oil priced in USD; surpluses recycled into Treasuries</td><td>AI narrative attracts global capital into U.S. equities &amp; bonds</td></tr>
+  <tr><td>Anchor asset</td><td>U.S. Treasury bonds</td><td>U.S. tech equities (Mag 7) + Treasuries</td></tr>
+  <tr><td>Scale of flows</td><td>OPEC accumulated ~$300B in U.S. debt (1960-2015)</td><td>AI capex: $650-725B in 2026 alone; cumulative $7.6T projected (2026-2031)</td></tr>
+  <tr><td>Foreign Treasury holdings</td><td>Built steadily over decades</td><td>$9.35 trillion (April 2026) -- near all-time highs</td></tr>
+  <tr><td>U.S. protection role</td><td>Military umbrella over Saudi Arabia and Gulf states</td><td>Technological/innovation monopoly; chip export controls</td></tr>
+  <tr><td>U.S. current account deficit</td><td>Persistent but contained</td><td>$1.12 trillion (2025) -- highest in history</td></tr>
+</table>
+<div class="note">Sources: U.S. Treasury TIC Data (April 2026), Goldman Sachs, BEA, Wikipedia, IMF</div>
+</div>
+
+<p>The numbers are staggering. Wall Street's largest banks project that Big Tech will spend between $650 billion and $725 billion on AI-related capital expenditure in 2026 alone. Goldman Sachs projects cumulative AI capex of $7.6 trillion between 2026 and 2031. NVIDIA alone commands a market capitalization of roughly $4.3 trillion -- larger than the entire energy sector of the S&P 500 combined.</p>
+
+<p>These are not merely large numbers. They represent a structural mechanism for absorbing global savings that functions in a manner strikingly similar to the petrodollar system it is succeeding.</p>
+
+<p>Here is how the parallel works. The United States runs an enormous current account deficit -- it imports more than it exports. That deficit must be financed by capital inflows from abroad. Under the petrodollar system, those inflows came predominantly through the recycling of oil revenues into Treasury bonds. Under the AI system, those inflows come through foreign purchases of U.S. technology equities and, indirectly, the U.S. government debt that funds the fiscal deficits those technology companies benefit from.</p>
+
+<p>Foreign holdings of U.S. Treasury securities stood at $9.35 trillion in April 2026, according to the Treasury Department's TIC data. Japan holds $1.21 trillion. The United Kingdom holds $938 billion. China holds $651 billion. Saudi Arabia, the original petrodollar partner, holds $140 billion -- a relatively modest sum that illustrates how the mechanism has diversified far beyond its original architecture.</p>
+
+<p>The AI capital boom does not replace the Treasury inflows. It supplements them. It creates a broader, more resilient mechanism: global capital flows into U.S. tech stocks because the AI narrative is irresistible; those inflows support the dollar and suppress U.S. borrowing costs; the suppressed borrowing costs enable both the federal government and the tech companies to continue spending at levels that would otherwise be unsustainable.</p>
+
+<div class="pullquote">
+  The AI boom is not merely a technology story. It is a capital-attraction machine. And the machine serves a purpose that goes well beyond the balance sheets of the companies building it.
+</div>
+
+<h2 class="section-head">The Capital Account: Follow the Money</h2>
+
+<p>To see the mechanism clearly, one must look not at the trade balance but at the capital account -- the mirror image of the current account. A current account deficit of $1.12 trillion means that the United States absorbed $1.12 trillion more in goods, services, and investment income from the rest of the world than it sent back. By definition, that deficit was financed by net capital inflows of the same magnitude.</p>
+
+<p>Those inflows took several forms. Foreign direct investment into U.S. technology companies. Foreign purchases of U.S. equities, particularly the Magnificent Seven -- Apple, Microsoft, Alphabet, Amazon, NVIDIA, Meta, and Tesla -- which collectively account for roughly 30% of the S&P 500's market capitalization. Foreign purchases of U.S. corporate and government bonds. Sovereign wealth fund investments in U.S. venture capital and private equity. The precise breakdown is obscured by the complexity of modern financial markets, but the direction of travel is unmistakable: global savings flow toward American assets because American assets offer something the rest of the world cannot match.</p>
+
+<p>Under the petrodollar system, that &quot;something&quot; was the unique status of the dollar as the currency of oil and the safe-haven status of U.S. Treasury bonds. Under the AI system, that &quot;something&quot; is the perception -- justified or not -- that American technology companies are building the infrastructure of the future and that capital not deployed into that infrastructure will be left behind.</p>
+
+<p>The narrative is self-reinforcing. The more capital flows into AI, the more valuable the AI companies become. The more valuable they become, the more they dominate global equity indices. The more they dominate indices, the more passive and active capital flows into them from every pension fund, sovereign wealth fund, and insurance company on earth. This is the same circular logic that sustained the petrodollar system: the more dollars were used for oil, the more essential dollars became, the more dollars countries needed to hold.</p>
+
+<h2 class="section-head">The Historical Precedent: Why This Has Happened Before</h2>
+
+<p>There is a long-standing debate among historians and economists about whether the petrodollar system was a deliberate strategic construct or an emergent property of market forces. The available evidence strongly favors the former interpretation. As William R. Clark documented in <em>Petrodollar Warfare</em> (2005), the Nixon administration understood precisely what it was doing. The 1974 U.S.-Saudi Arabian Joint Commission on Economic Cooperation was not a vague statement of mutual goodwill. It was a detailed framework for ensuring that Saudi oil revenues were denominated in dollars and invested in the American economy.</p>
+
+<p>David M. Wight's <em>Oil Money</em> (2021), the most recent and archivally rigorous treatment of the subject, demonstrates that petrodollar recycling transformed the nature of American empire between 1967 and 1988. It was not a side effect of the oil market. It was the point of the oil market.</p>
+
+<blockquote class="pullquote" style="font-style:italic; font-weight:400;">
+  &quot;The international monetary system is facing its most difficult period since the 1930s.&quot;
+  <span class="attribution">&mdash; Johan Witteveen, IMF Managing Director, 1974, as the petrodollar system was being constructed</span>
+</blockquote>
+
+<p>Is the AI capital boom a similarly deliberate construct? The question is harder to answer, because overt government coordination is less visible. But the structural similarities are too pronounced to dismiss as coincidence. The U.S. government has pursued policies that actively channel global capital toward American AI companies: export controls on advanced semiconductors to China, massive federal research funding through DARPA and the Department of Defense, tax incentives for domestic chip manufacturing through the CHIPS Act, and a regulatory environment that has allowed the largest technology companies to achieve market concentrations that would have been unthinkable a generation ago.</p>
+
+<p>Whether by design or by emergent logic, the outcome is the same. The United States has created an asset class so compelling that the world cannot afford not to own it. And in owning it, the world finances the country that issues it.</p>
+
+<h2 class="section-head">The Debt That Never Gets Repaid</h2>
+
+<p>The most uncomfortable fact about both the petrodollar system and the AI capital magnet is what they enable: the accumulation of debt that never has to be repaid in any conventional sense.</p>
+
+<p>Under the petrodollar system, the United States issued Treasury bonds to finance its deficits. The bonds were purchased by oil exporters, who held them as safe assets. The bonds paid interest, which flowed back to the oil exporters. The principal was rolled over indefinitely. The system worked because everyone had an interest in its continuation: the United States got to spend beyond its means, the oil exporters got security guarantees and a safe place to park their wealth, and the global economy got a stable reserve currency.</p>
+
+<p>Under the AI system, a similar dynamic is at play, but with an important difference. Instead of bonds, the magnet asset is equity. Foreign investors who buy NVIDIA or Microsoft shares are not lending the United States money; they are buying ownership stakes in American companies. The returns they receive are not interest payments but capital appreciation and dividends. The mechanism does not formally create debt. But it finances debt indirectly, by ensuring that the dollar remains strong and that demand for U.S. financial assets remains insatiable, which in turn keeps Treasury yields low and enables continued deficit spending.</p>
+
+<div class="data-box">
+<h4>How Global Capital Finances the U.S. Deficit: Two Eras Compared</h4>
+<table>
+  <tr><th></th><th>Petrodollar Era</th><th>AI Era</th></tr>
+  <tr><td>Inflow vehicle</td><td>Treasury bonds</td><td>Equities + bonds</td></tr>
+  <tr><td>Foreign Treasury holdings</td><td>Built from near-zero to ~$3T by 2000</td><td>$9.35 trillion (April 2026)</td></tr>
+  <tr><td>U.S. net int'l investment position</td><td>Negative but manageable</td><td>-$27.5 trillion (end-2025)</td></tr>
+  <tr><td>Current account deficit</td><td>Peaked at ~6% of GDP (2006)</td><td>$1.12 trillion (~4% of GDP, 2025)</td></tr>
+  <tr><td>Who holds the assets</td><td>OPEC central banks, sovereign funds</td><td>Global pension funds, SWFs, central banks, retail</td></tr>
+  <tr><td>Systemic risk</td><td>Oil pricing shift away from USD</td><td>AI bubble deflation; capital flight</td></tr>
+</table>
+<div class="note">Sources: U.S. Treasury TIC, BEA, IMF</div>
+</div>
+
+<p>The shift from bonds to equities as the primary magnet asset is significant. Bonds must eventually be repaid -- or at least refinanced. Equities never have to be repaid. Foreign investors who bought U.S. equities at inflated valuations during the dot-com bubble lost most of their capital when the bubble burst. The United States did not default; it simply transferred the loss to the investors. An AI bubble that deflates would work the same way: foreign capital that flowed into NVIDIA at $1,000 per share would be destroyed, but the dollars that capital represented would already have been absorbed into the American economy.</p>
+
+<p>This is the dark genius of the equity-based capital magnet. It attracts savings from the rest of the world, finances American consumption and investment, and then -- if the narrative collapses -- leaves the foreign investor holding the loss. It is a mechanism that privatizes the gains and socializes the losses, but across international borders rather than within a single economy.</p>
+
+<h2 class="section-head">The BRICS Challenge and the Dollar's Resolve</h2>
+
+<p>Any discussion of the petrodollar-to-AI transition must acknowledge the elephant in the room: de-dollarization.</p>
+
+<p>The BRICS nations -- Brazil, Russia, India, China, and South Africa, along with new members including Saudi Arabia, the UAE, Iran, and Egypt -- have been actively building alternatives to the dollar-based system. China's Cross-Border Interbank Payment System (CIPS) processed transactions worth more than $25 trillion in 2024. The BRICS New Development Bank is extending loans in local currencies. Russia and China conduct the vast majority of their bilateral trade in rubles and yuan. Saudi Arabia has accepted yuan for oil shipments to China.</p>
+
+<p>And yet the dollar's share of global reserves, while declining from 71% to 58%, remains dominant. The petrodollar system may be weakening, but the AI capital magnet is strengthening. The two forces are not independent. As the petrodollar erodes, the AI magnet compensates -- and the net effect is that foreign capital continues to flow into the United States at rates that would have been considered impossible even a decade ago.</p>
+
+<blockquote class="pullquote" style="font-style:italic; font-weight:400;">
+  The fundamental insight is that American hegemony does not depend on any single mechanism. It depends on the ability to create new mechanisms when old ones decay. The petrodollar was one such mechanism. The AI capital magnet is another. There will be more.
+</blockquote>
+
+<h2 class="section-head">What Would Break the Cycle?</h2>
+
+<p>Every system of this kind has vulnerabilities. The petrodollar system was always vulnerable to a shift in oil pricing away from the dollar -- a shift that is now slowly underway. The AI capital magnet is vulnerable to a deflation of the AI bubble, a loss of confidence in U.S. technology companies, or the emergence of competitive AI ecosystems outside the United States that attract capital away from American markets.</p>
+
+<p>DeepSeek, the Chinese AI startup that released a ChatGPT-comparable model reportedly trained for just $5.6 million, wiped $588.8 billion off NVIDIA's market value in a single day in January 2025. The company recovered, but the event exposed a structural fragility: if the technological moats protecting American AI companies prove shallower than investors believe, the capital magnet could weaken rapidly.</p>
+
+<p>A second vulnerability is less dramatic but more systemic. The U.S. net international investment position of negative $27.5 trillion represents decades of accumulated deficits. At some point -- and no one knows where that point lies -- foreign investors may begin to demand higher returns for holding dollar-denominated assets, or simply diversify away. The AI capital magnet has suppressed this risk by making American assets uniquely attractive, but it has not eliminated it.</p>
+
+<div class="counterpoint">
+<strong>Counterpoint:</strong> The argument that the AI boom is a deliberate mechanism for financing U.S. deficits overstates the case. AI is a genuine technological revolution with transformative economic potential. The capital flowing into it reflects rational expectations of future returns, not a conspiracy to prop up the dollar. The United States runs persistent deficits because the dollar is the world's reserve currency, and the dollar is the world's reserve currency because no credible alternative exists -- not because of petrodollar deals or AI narratives. The AI capital boom is a market phenomenon, not a policy construct. To impute strategic intent to the aggregate behavior of millions of investors and thousands of companies is to mistake correlation for causation.
+</div>
+
+<h2 class="section-head">The Pattern That Repeats</h2>
+
+<p>The counterargument has merit. AI is a real technology with real value. The petrodollar system was also built on a real commodity with real value -- oil. The question is not whether the underlying asset is genuine. It is whether the financial superstructure built on top of it serves purposes beyond the asset's intrinsic economic function.</p>
+
+<p>In the case of oil, the evidence is overwhelming that it did. The petrodollar system was not an inevitable consequence of oil markets. It was a deliberate architecture constructed by policymakers who understood that anchoring global dollar demand to an essential commodity would allow the United States to sustain deficits indefinitely. The pricing of oil in dollars and the recycling of oil revenues into Treasuries were not separate phenomena. They were two sides of the same design.</p>
+
+<p>In the case of AI, the evidence is still accumulating. But the structural parallels are difficult to ignore. The United States runs a massive current account deficit. It finances that deficit by attracting foreign capital. The most powerful magnet for that capital today is American technology leadership in artificial intelligence. The U.S. government actively protects and promotes that leadership through export controls, industrial policy, and regulatory frameworks that favor domestic incumbents. The result is a self-reinforcing cycle in which global savings flow into American AI assets, the dollar strengthens, and the deficit is financed -- just as petrodollar recycling financed the deficits of the 1970s, 1980s, and 1990s.</p>
+
+<p>Whether this is a policy conspiracy or an emergent systemic property is, in a sense, beside the point. The outcome is the same. The mechanism works. And so long as it works, the United States can continue to do what no other country has been able to do: run a forever deficit, financed by the rest of the world, with no obvious reckoning in sight.</p>
+
+<hr class="rule">
+
+<em>Sources: David E. Spiro, "The Hidden Hand of American Hegemony" (1999); William R. Clark, "Petrodollar Warfare" (2005); David M. Wight, "Oil Money" (2021); F. William Engdahl, "A Century of War" (1992); U.S. Treasury TIC Data, Table 5: Major Foreign Holders of Treasury Securities (April 2026); Bureau of Economic Analysis, U.S. International Transactions and Investment Position (Q4 2025); Goldman Sachs, "Tracking Trillions" (May 2026); Wikipedia, "Petrodollar Recycling"; LegalClarity.org, "What Was Kissinger's Petrodollar Deal With Saudi Arabia?" (April 2026); Bank of America Global Fund Manager Survey (October 2025); IMF Currency Composition of Official Foreign Exchange Reserves (COFER).</em>
+
+<p><em>Write to AL at yeo@sky-db.com</em></p>
+
+<div class="article-footer">
+  AL STREET JOURNAL &nbsp;|&nbsp; July 3, 2026 &nbsp;|&nbsp; Global Markets &amp; Geopolitics<br>
+  &copy; 2026 AL Analytics. Not affiliated with Dow Jones.
+</div>
+
+</div>
+
+</body>
+</html>
