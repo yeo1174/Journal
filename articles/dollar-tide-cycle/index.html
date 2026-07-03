@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dollar Tide Cycle: How Fed Rate Swings Reshape the Global South</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz@8..60&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f5f3ef;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+
+  .top-bar {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .header {
+    border-bottom: 3px double #1a1a1a;
+    padding: 20px 0 14px;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    line-height: 1;
+  }
+
+  .masthead-sub {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+  }
+
+  .date-bar {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .article-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    color: #111;
+  }
+
+  .subhead {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+    border-left: 3px solid #1a1a2e;
+    padding-left: 16px;
+  }
+
+  .byline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .dateline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 28px;
+  }
+
+  .rule {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222;
+  }
+
+  .pullquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid #1a1a2e;
+    background: rgba(26, 26, 46, 0.03);
+  }
+  .pullquote .attribution {
+    display: block;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .section-head {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #1a1a2e;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a2e;
+  }
+
+  .data-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+  }
+  .data-box h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .data-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .data-box th {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+  }
+  .data-box td {
+    font-size: 15px;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .data-box td:last-child,
+  .data-box th:last-child {
+    text-align: right;
+    font-weight: 600;
+  }
+  .data-box .note {
+    font-size: 11px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  .counterpoint {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: #faf8f5;
+    border: 1px solid #e5e0d8;
+  }
+  .counterpoint strong {
+    color: #1a1a2e;
+  }
+
+  .full-cycle {
+    background: #fff;
+    border-left: 4px solid #1a1a2e;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .full-cycle h4 {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+  }
+  .full-cycle ol {
+    padding-left: 20px;
+    margin: 0;
+  }
+  .full-cycle li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  .full-cycle li strong {
+    color: #1a1a2e;
+  }
+
+  .article-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a1a;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .headline { font-size: 28px; }
+    .masthead { font-size: 32px; }
+    body { font-size: 16px; }
+    p { font-size: 16px; }
+    .pullquote { font-size: 20px; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">The Journal Report</div>
+
+<div class="header">
+  <a href="/Journal/" style="text-decoration:none;color:inherit;"><div class="masthead">AL STREET JOURNAL</div></a>
+  <div class="masthead-sub">Global Markets &amp; Finance</div>
+</div>
+
+<div class="date-bar">Friday, July 3, 2026 &nbsp;|&nbsp; 12:21 PM MYT</div>
+
+<div class="article-wrapper">
+
+<h1 class="headline">The Dollar Tide Cycle: How Fed Rate Swings Quietly Harvest the Global South</h1>
+
+<div class="subhead">When the Fed cuts, cheap dollars flood emerging markets and a boom begins. When it raises, the tide rushes back out &mdash; currencies crash, debts explode, and assets are sold at fire-sale prices. Whether this cycle is deliberate or a side effect is one of the most consequential unanswered questions in global finance.</div>
+
+<div class="byline">By AL</div>
+<div class="dateline">KUALA LUMPUR &mdash; Imagine an ocean tide that follows no lunar schedule, governed instead by a single committee of twelve people meeting eight times a year in Washington, D.C. When that committee decides the tide is low, trillions of dollars roll out across the globe, lifting the currencies and economies of distant shores. When it decides the tide is high, the water rushes back &mdash; and everything left behind is suddenly stranded, gasping for air. This is the dollar tide cycle, and it has been the hidden engine behind some of the most devastating financial crises of the last four decades.</p>
+
+<p>The mechanism is elegant, brutal, and entirely legal. It does not require armies, sanctions, or trade wars. It needs only the Federal Reserve to set interest rates, and the world&rsquo;s most fundamental structural imbalance to do the rest.</p>
+
+<h2 class="section-head">The Five Stages of the Dollar Tide</h2>
+
+<div class="full-cycle">
+<h4>The Dollar Tide Cycle</h4>
+<ol>
+  <li><strong>Fed cuts rates (low tide out)</strong> &mdash; Money is cheap in the US, so investors chase higher returns abroad. Capital floods into Global South countries &mdash; stocks, bonds, loans, real estate.</li>
+  <li><strong>Local currencies rise, debt looks easy</strong> &mdash; Countries borrow heavily in dollars while it is cheap. The era feels like a boom. Everyone gets optimistic.</li>
+  <li><strong>Fed raises rates (tide comes back in)</strong> &mdash; Investors pull money out of the South and back into the US for safer, higher returns. The flow reverses.</li>
+  <li><strong>Currencies crash</strong> &mdash; Local currencies weaken sharply, but their debt is still owed in dollars. The same obligation suddenly costs twice as much to repay.</li>
+  <li><strong>Assets get bought cheap</strong> &mdash; Struggling countries sell assets &mdash; companies, land, resources &mdash; at fire-sale prices, often to Northern investors.</li>
+</ol>
+</div>
+
+<p>The &ldquo;harvest&rdquo; completes itself. Cheap money flows in during the easy phase, capital flees during the tightening phase, and the distressed assets left behind are acquired at a discount. Then the Fed cuts again, and the whole cycle repeats. Whether Washington does this deliberately &mdash; as a form of systemic harvesting &mdash; or simply sets rates for its own domestic economy and accepts the collateral damage as an unavoidable side effect, is the gap between cynicism and tragedy. Either way, the pattern is unmistakable.</p>
+
+<h2 class="section-head">Stage 1: The Flood</h2>
+
+<p>The cycle begins with an entirely reasonable decision. The US economy slows, or a recession threatens, and the Federal Reserve lowers interest rates. In 2020, the Fed cut rates to near zero in a matter of weeks. In 2008, it did much the same. In the early 2000s, the post-dot-com cuts drove rates down to 1%. Each time, the result was identical: a wall of cheap dollars seeking higher yields than the US could offer.</p>
+
+<p>Emerging market fund managers call it the &ldquo;search for yield.&rdquo; It sounds like a technical term, but its meaning is simple: a pension fund in Boston cannot earn enough buying 2% US Treasuries, so it buys 8% Indonesian government bonds instead. That one decision, multiplied across millions of institutional investors, produces a flood. Capital pours into Brazil, India, Indonesia, Turkey, South Africa, and Malaysia. Stock markets rally. Currencies strengthen. Foreign direct investment surges. Local developers build shopping malls, airports, and condominium towers with easy access to dollar-denominated loans.</p>
+
+<p>To the leaders and citizens of these countries, it feels like progress. It is not. It is the prelude to extraction.</p>
+
+<h2 class="section-head">Stage 2: The Debt Trap Baits Itself</h2>
+
+<p>When the money flows in, it does not arrive as a gift. It arrives as a loan denominated in dollars. And when a country&rsquo;s assets are rising and its currency is strengthening, that dollar-denominated debt looks manageable and even wise. A Malaysian corporation borrowing $100 million at 4% when the ringgit is at RM3.80 is effectively betting that the trend will continue.</p>
+
+<p>It never does.</p>
+
+<p>This phenomenon is a direct consequence of what economists Eichengreen, Hausmann, and Panizza called &ldquo;original sin&rdquo; &mdash; the inability of most developing countries to borrow in their own currencies. A Malaysian company would much rather issue a bond in ringgit, avoiding the currency mismatch. But international investors will not buy ringgit-denominated bonds from a Malaysian issuer because the Malaysian capital market is too small and the currency too volatile. So the borrower has no choice but to take on dollar debt. The mismatch is structural. It is built into the architecture of the system.</p>
+
+<p>During the boom years, nobody complains. The currency is rising, the economy is growing, and the debt service is affordable. But beneath the surface, a vulnerability is compounding. Every dollar borrowed is a bet that the local currency will not depreciate. And in the dollar tide cycle, depreciation is not merely possible. It is the next guaranteed stage.</p>
+
+<h2 class="section-head">Stage 3: The Tide Turns</h2>
+
+<p>The Fed tightens. It is not a hostile act. The Chairman does not wake up one morning and decide to punish emerging markets. The US economy is overheating, or inflation is rising, and the Fed does what central banks do: it raises rates. In 2013, during the &ldquo;Taper Tantrum,&rdquo; then-Chair Ben Bernanke merely mentioned the possibility of slowing quantitative easing, and emerging market currencies collapsed. In 2022, when the Fed began its most aggressive rate-hiking cycle in four decades, the effect was so severe that the IMF issued rare public warnings about the speed and scale of capital outflows.</p>
+
+<p>The mechanism is mechanical. US Treasuries now yield 5%. That same Boston pension fund no longer needs to chase 8% in Jakarta when it can earn 5% at home with zero currency risk. The fund sells its Indonesian bonds, converts the proceeds back to dollars, and buys Treasuries. Every other fund does the same. The collective action produces a stampede.</p>
+
+<div class="data-box">
+<h4>Major Fed Tightening Cycles &amp; Emerging Market Fallout</h4>
+<table>
+  <tr><th>Period</th><th>Fed Funds Rate Change</th><th>EM Currency Index</th><th>Notable Crisis</th></tr>
+  <tr><td>1980&ndash;1981</td><td>10% &rarr; 20%</td><td>N/A</td><td>Latin American debt crisis</td></tr>
+  <tr><td>1994&ndash;1995</td><td>3% &rarr; 6%</td><td>-12%</td><td>Tequila crisis (Mexico)</td></tr>
+  <tr><td>2004&ndash;2006</td><td>1% &rarr; 5.25%</td><td>-8%</td><td>Multiple EM sell-offs</td></tr>
+  <tr><td>2015&ndash;2018</td><td>0% &rarr; 2.5%</td><td>-15%</td><td>Turkish lira, Argentine peso crises</td></tr>
+  <tr><td>2022&ndash;2023</td><td>0% &rarr; 5.5%</td><td>-18%</td><td>Sri Lanka default, Pakistan near-default</td></tr>
+</table>
+<div class="note">EM Currency Index = MSCI Emerging Market Currency Index approximate change. Fed funds rate is target range upper bound.</div>
+</div>
+
+<h2 class="section-head">Stage 4: The Crash</h2>
+
+<p>The local currency collapses. The Turkish lira lost 80% of its value against the dollar between 2018 and 2024. The Argentine peso lost 95% over roughly the same period. The Sri Lankan rupee fell 65% in a single year. The ringgit slid from RM3.80 in 2010 to RM4.70 by early 2026. Every percentage point of depreciation is not just a number on a screen. It is a direct transfer of wealth from the local economy to the foreign creditor.</p>
+
+<p>The mathematics is brutal. A company that borrowed $100 million when the ringgit was at RM3.80 owed RM380 million. When the ringgit falls to RM4.70, that same $100 million debt becomes RM470 million. The company did not take on more debt. It did not make bad business decisions. It simply had the misfortune of borrowing in dollars during the flood phase, only to face the bill during the ebb. Multiply that across every corporate borrower, every sovereign bond issuance, every infrastructure project financed by international capital in every developing country, and the scale of the wealth transfer becomes staggering.</p>
+
+<p>As Nobel laureate Joseph Stiglitz put it in his 2002 book <em>Globalization and Its Discontents</em>, the IMF&rsquo;s response to these crises has consistently been to demand austerity, deregulation, and the opening of capital accounts &mdash; precisely the policies that make the developing country <em>more</em> vulnerable to the next cycle. The medicine for the crisis reinforces the conditions that caused it.</p>
+
+<div class="pullquote">
+  &ldquo;The international financial architecture is not designed to help developing countries manage the volatility of capital flows. It is designed to ensure that when the volatility hits, the creditors get paid first.&rdquo;
+  <span class="attribution">&mdash; Joseph Stiglitz, adapted from &ldquo;Globalization and Its Discontents&rdquo; (2002)</span>
+</div>
+
+<h2 class="section-head">Stage 5: The Harvest</h2>
+
+<p>The final stage is the quietest, and the most consequential. When a country is desperate for dollars to service its debt, it sells whatever it can. During the Asian Financial Crisis of 1997&ndash;1998, South Korea&rsquo;s distressed corporations were acquired by foreign buyers at valuations that would have been unthinkable two years earlier. Indonesia&rsquo;s banking sector was sold to foreign institutions. Thai assets were purchased at deep discounts. The IMF&rsquo;s rescue packages came with conditions: open your financial markets to foreign ownership, deregulate your capital account, privatize state enterprises. Countries that had built decades of development were forced to sell the crown jewels for a fraction of their value.</p>
+
+<p>The same pattern has recurred in every subsequent tightening cycle. In 2023, Zambia sold mining assets under duress. Pakistan negotiated with the IMF while its strategic companies were circled by foreign bidders. Argentina&rsquo;s distressed energy and agricultural assets changed hands at prices that will look impossibly cheap when the dollar tide eventually turns again.</p>
+
+<p>Is this deliberate? The question is not an easy one. There is no smoking gun, no White House memo titled &ldquo;Plan to Harvest Developing Countries.&rdquo; But the American economist Michael Hudson has argued for decades that the dollar&rsquo;s reserve status functions as a form of economic imperialism &mdash; not requiring colonies or military occupation, because the monetary architecture itself is sufficient to extract wealth.</p>
+
+<p>What is undeniable is that the Fed sets interest rates based entirely on US domestic conditions. It has no mandate to consider the impact on emerging markets. When the IMF&rsquo;s Independent Evaluation Office reviewed the Fund&rsquo;s handling of capital flow volatility in 2024, its conclusion was quiet but damning: the international financial system had not developed adequate mechanisms to protect developing countries from the spillover effects of monetary policy in advanced economies.</p>
+
+<p>Whether the harvest is intention or negligence matters less than the result. The tide goes out. The tide comes in. And every cycle, the developing world is reminded that the water level is not set by its own gravity.</p>
+
+<h2 class="section-head">The Counter-Argument: Cause and Effect</h2>
+
+<div class="counterpoint">
+<strong>Counterpoint:</strong> The Fed sets interest rates for the US economy, not as a geopolitical weapon. If the Fed kept rates artificially low to avoid harming emerging markets, it would risk runaway inflation at home, which would ultimately be worse for everyone. Developing countries are not passive victims &mdash; they choose to borrow in dollars, they choose not to build deeper domestic capital markets, and they choose to run current account deficits that leave them exposed. The &ldquo;dollar tide&rdquo; is not a conspiracy. It is a predictable consequence of policy decisions made in capitals around the world, not just in Washington. The real problem is not the Fed. It is the absence of domestic financial resilience in the countries that get hurt most.
+</div>
+
+<p>The counter-argument is valid &mdash; up to a point. No one forced Thailand to borrow short-term dollars in the 1990s. No one forced Argentina to accumulate unpayable debt. Domestic policy choices matter enormously. But the counter-argument fails to account for the structural asymmetry at the heart of the system: no developing country, no matter how well-managed, has the power to set the interest rate on the global reserve currency, and no developing country can borrow in its own currency on international markets. The game is rigged from the start. The only choice is whether to play it cautiously or recklessly. But it is still the only game in town.</p>
+
+<h2 class="section-head">Malaysia&rsquo;s Position: Caught in the Tide</h2>
+
+<p>Malaysia has avoided the worst of these crises. After the 1997&ndash;1998 trauma, Bank Negara accumulated significant foreign exchange reserves, maintained a managed float currency regime, and retained capital controls on the ringgit. Malaysia does not have the full-blown dollarization problem that Argentina or Turkey suffers. But it is not immune. The ringgit&rsquo;s long decline from RM3.80 to RM4.70 against the dollar represents a permanent loss of purchasing power for every Malaysian. Every dollar-denominated loan held by Malaysian corporations is now 24% more expensive to service than it was in 2010.</p>
+
+<p>Malaysia&rsquo;s external debt stands at roughly RM1.2 trillion, a significant portion of which is denominated in foreign currencies. When the Fed tightens and the ringgit weakens, that debt grows in ringgit terms without any additional borrowing. It is a tax paid not to the government, but to foreign creditors. A tax that is never voted on, never debated in Parliament, and never accounted for in the national budget &mdash; but is as real as any levy the Inland Revenue Board has ever collected.</p>
+
+<h2 class="section-head">The Search for an Alternative</h2>
+
+<p>The dollar tide cycle will continue as long as the dollar remains the world's primary reserve currency and as long as the Fed is the world's only central bank that matters. There are signs of change. ASEAN is expanding its local currency settlement framework. BRICS is building alternative payment infrastructure. China is promoting the yuan for trade settlement, though the yuan remains a fraction of the dollar's share. But none of these alternatives have reached the scale or liquidity to break the cycle.</p>
+
+<p>The most realistic reform is not de-dollarization, which will take decades if it happens at all. It is the building of resilience: larger foreign exchange reserves, deeper local currency bond markets, more regional swap lines, and a coordinated developing-country voice in global financial governance. Malaysia&rsquo;s participation in the Chiang Mai Initiative Multilateralization and the ASEAN Local Currency Settlement Framework are steps in this direction, but they remain small relative to the scale of the problem.</p>
+
+<hr class="rule">
+
+<p><em>The dollar tide cycle is not a law of economics. It is a pattern of human behavior refracted through the lens of a deeply unequal monetary system. It can be studied, predicted, and prepared for. Whether it can be escaped &mdash; and who would pay the price of escape &mdash; is the question that will define the next chapter of the developing world's long struggle for economic sovereignty.</em></p>
+
+<hr class="rule">
+
+<p><em>Sources: Michael Hudson, &ldquo;Super Imperialism&rdquo; (1972); Joseph Stiglitz, &ldquo;Globalization and Its Discontents&rdquo; (2002); Eichengreen, Hausmann &amp; Panizza, &ldquo;Original Sin&rdquo; (2003); IMF Independent Evaluation Office, &ldquo;Capital Flow Management&rdquo; (2024); Federal Reserve Economic Data (FRED), historical Fed funds rate; Bank Negara Malaysia, external debt statistics; BIS international debt securities data. Exchange rate data from Bloomberg and XE.com.</em></p>
+
+<p><em>Write to AL at yeo@sky-db.com</em></p>
+
+<div class="article-footer">
+  AL STREET JOURNAL &nbsp;|&nbsp; July 3, 2026 &nbsp;|&nbsp; Global Markets &amp; Finance<br>
+  &copy; 2026 AL Analytics. Not affiliated with Dow Jones.
+</div>
+
+</div>
+
+</body>
+</html>
