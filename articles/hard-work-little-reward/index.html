@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Village's Story: Sweat, Smoke, and a Piece of Paper</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz@8..60&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f5f3ef;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+
+  .top-bar {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .header {
+    border-bottom: 3px double #1a1a1a;
+    padding: 20px 0 14px;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    line-height: 1;
+  }
+
+  .masthead-sub {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+  }
+
+  .date-bar {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .article-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    color: #111;
+  }
+
+  .subhead {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+    border-left: 3px solid #1a1a2e;
+    padding-left: 16px;
+  }
+
+  .byline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .dateline {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 28px;
+  }
+
+  .rule {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222;
+  }
+
+  .pullquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid #1a1a2e;
+    background: rgba(26, 26, 46, 0.03);
+  }
+  .pullquote .attribution {
+    display: block;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .section-head {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #1a1a2e;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a2e;
+  }
+
+  .data-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+  }
+  .data-box h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .data-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .data-box th {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+  }
+  .data-box td {
+    font-size: 15px;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .data-box td:last-child,
+  .data-box th:last-child {
+    text-align: right;
+    font-weight: 600;
+  }
+  .data-box .note {
+    font-size: 11px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  .highlight-box {
+    background: #faf8f5;
+    border: 1px solid #e5e0d8;
+    padding: 20px 24px;
+    margin: 28px 0;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .highlight-box strong {
+    color: #1a1a2e;
+  }
+
+  .article-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #1a1a1a;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    .headline { font-size: 28px; }
+    .masthead { font-size: 32px; }
+    body { font-size: 16px; }
+    p { font-size: 16px; }
+    .pullquote { font-size: 20px; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">The Journal Report</div>
+
+<div class="header">
+  <a href="/Journal/" style="text-decoration:none;color:inherit;"><div class="masthead">AL STREET JOURNAL</div></a>
+  <div class="masthead-sub">Global Markets &amp; Finance</div>
+</div>
+
+<div class="date-bar">Saturday, July 4, 2026 &nbsp;|&nbsp; 5:33 PM MYT</div>
+
+<div class="article-wrapper">
+
+<h1 class="headline">One Village's Story: Sweat, Smoke, and a Piece of Paper</h1>
+
+<div class="subhead">For thirty years, China's villages burned their youth and their rivers to make cheap things for the world. In return, they got a pile of dollars that could only be used to buy one thing: American debt.</div>
+
+<div class="byline">By AL</div>
+<div class="dateline">DONGGUAN, China &mdash; Chen Jianguo wakes at 5:00 AM. There is no alarm. His body simply knows. Twenty-two years of factory work have programmed him like a machine.</p>
+
+<p>He washes his face in a basin. The water comes from a bottle, not the tap. The tap water here has been undrinkable for a decade. The river that ran past his childhood home is now a black, chemical-smelling scar through the village. It foams when it rains. Nothing lives in it anymore.</p>
+
+<p>Jianguo is 46. He looks sixty.</p>
+
+<p>By 5:30 he is on his electric scooter, weaving through the narrow lanes of a town that does not appear on most maps. This is one of thousands of manufacturing villages across China's eastern seaboard &mdash; invisible engines of the global economy. In the workshops and factories here, men and women like Jianguo produce the plastic toys, the electronic gadgets, the shoes, the clothes, the furniture, the everything that fills the shelves of Walmart, Target, Carrefour, and Tesco.</p>
+
+<p>By 6:00 AM, he is at his station.</p>
+
+<p>He will stand there until 9:00 PM, with one thirty-minute break for lunch and one for dinner. Six days a week. Every week. For 22 years.</p>
+
+<div class="pullquote">
+  &ldquo;Twenty-two years. I have made maybe one million pairs of shoes. I have never owned a pair that cost more than fifty yuan.&rdquo;
+  <span class="attribution">&mdash; Chen Jianguo, factory worker, Dongguan</span>
+</div>
+
+<h2 class="section-head">What He Makes, What It Costs</h2>
+
+<p>Jianguo works in a shoe factory. The sneakers he assembles sell for $120 to $200 in American stores. Nike. Adidas. New Balance. His share of labor on each pair: about 12 yuan ($1.65). The factory owner gets maybe $8. The brand takes the rest &mdash; roughly $90 to $150 in design, marketing, distribution, and profit.</p>
+
+<p>For every pair of sneakers Jianguo helps make, an American company earns more in profit than Jianguo earns in a month.</p>
+
+<p>This is not an accident. It is the system.</p>
+
+<p>The system works like this: America wants cheap goods. China has millions of willing workers. The village pays the environmental and human cost of production. The brand captures the value. The consumer gets the discount. And the difference &mdash; the enormous gap between what the villager is paid and what the product is worth &mdash; is the engine that made the global economy what it is today.</p>
+
+<h2 class="section-head">The Village Price</h2>
+
+<p>The price Jianguo's village has paid is not measured in yuan.</p>
+
+<p>The river that was once clean enough to drink from is now toxic. Cancer rates in the village have tripled in twenty years. The air is permanently hazy with factory smoke. The soil in the farmland next to the industrial zone is so contaminated that the vegetables grown there taste of metal.</p>
+
+<p>The young people leave. They come to Shenzhen and Dongguan for the factory jobs, but they do not stay long. The turnover rate in Jianguo's factory is 70% per year. Most last six months. The work is too hard, the pay too low, the conditions too grim. Jianguo has outlasted them all because he has nowhere else to go.</p>
+
+<p>"My wife died four years ago," he says. "Lung cancer. The doctors said it was the air. We live next to the shoe factory's glue workshop. She never smoked a cigarette in her life."</p>
+
+<p>He says this without anger, as if stating a weather report. Anger requires energy he does not have.</p>
+
+<h2 class="section-head">The Exchange Rate Trick</h2>
+
+<p>There is a reason Jianguo's 12 yuan per pair of sneakers buys him so little. It is the same reason that his entire village &mdash; and by extension, his entire country &mdash; has been working at a discount for decades.</p>
+
+<p>The Chinese yuan has been deliberately kept undervalued against the U.S. dollar, year after year, by the Chinese government. This is not a conspiracy theory. It is the stated policy, openly discussed in economic textbooks and central bank reports. The purpose is clear: make Chinese exports cheaper so the world buys more of them.</p>
+
+<div class="highlight-box">
+<strong>How the exchange rate trick works:</strong><br><br>
+A pair of sneakers costs $20 to produce in China. If one dollar equals 7 yuan, the factory needs 140 yuan to cover costs. If the government pushes the rate to 8 yuan per dollar, the factory only needs to collect 160 yuan in revenue to cover that same $20 cost &mdash; so it can sell the sneakers for less in dollars.<br><br>
+The factory wins. The brand wins. The American consumer wins. The person who pays the difference is Jianguo &mdash; because his wages are in yuan, but the value of his labor is measured in dollars. A cheap yuan means cheap labor. Period.
+</div>
+
+<p>Here is the math that matters:</p>
+
+<p>In 2005, one U.S. dollar bought 8.28 yuan. Jianguo's monthly wage that year was about 1,200 yuan &mdash; roughly $145 a month. By 2015, the rate had moved to about 6.2 yuan per dollar, and his wage had risen to 3,000 yuan &mdash; about $484 a month. Today, with the rate around 7.2 yuan per dollar, he earns about 5,000 yuan a month &mdash; roughly $695.</p>
+
+<p>It sounds like progress, until you track what has happened inside China.</p>
+
+<p>In 2005, a basic meal in Dongguan cost about 5 yuan. Today, the same meal costs 25 yuan. Rent has gone from 200 yuan to 1,500 yuan. The cost of living has risen much faster than wages. In real terms &mdash; what Jianguo can actually buy with his money &mdash; his standard of living has barely improved in two decades.</p>
+
+<p>Meanwhile, the American who bought those sneakers in 2005 paid about $100. Today, allowing for inflation, he pays about $130. His real cost has barely changed either &mdash; because the exchange rate and the wage suppression absorbed the inflation for him.</p>
+
+<div class="pullquote">
+  &ldquo;The Chinese people have subsidized the American consumer for thirty years. Our children breathe poison so that their children can buy cheap sneakers.&rdquo;
+  <span class="attribution">&mdash; Former Chinese trade negotiator, speaking on condition of anonymity, 2023</span>
+</div>
+
+<h2 class="section-head">The Dollars Arrive</h2>
+
+<p>All of this cheap production adds up to something enormous. China sells the world far more than it buys. The difference is called the trade surplus.</p>
+
+<p>In 2025, China's trade surplus reached nearly $1 trillion. That means China sold $1 trillion more in goods to the world than it bought. More than half of that surplus came from the United States.</p>
+
+<p>Think about what that means. An entire country &mdash; a nation of 1.4 billion people &mdash; produced, shipped, and sold to the world, and took in $1 trillion more than it sent back in payments. Most of that surplus was dollars&mdash;literally trillions of U.S. dollars, accumulating in Chinese bank accounts, in the central bank's vaults, in the country's foreign exchange reserves.</p>
+
+<p>Which raises a question: what do you do with a trillion dollars?</p>
+
+<p>You cannot spend them all, because if you try to convert that many dollars into yuan, the exchange rate would collapse and your exports would no longer be cheap. You cannot buy American companies easily, because the U.S. government blocks Chinese acquisitions of sensitive firms. You cannot buy American real estate freely, because the rules have been tightened.</p>
+
+<p>There is really only one thing you can buy with that many dollars: U.S. government bonds. Treasury bills. IOUs from the United States government.</p>
+
+<h2 class="section-head">The Piece of Paper</h2>
+
+<p>As of 2026, China holds roughly $760 billion in U.S. Treasury securities. This is down from a peak of about $1.3 trillion in 2013, but still a staggering number.</p>
+
+<p>Here is what that means for Jianguo:</p>
+
+<p>Twenty-two years of factory work. Twelve-hour days. A dead wife. A poisoned river. A body that is used up at 46. And the dollars his labor generated &mdash; the vast surplus of value that he created but was never paid for &mdash; went to buy bonds issued by the government of the country that benefited most from his cheap labor.</p>
+
+<p>He does not own the bonds, of course. The Chinese government does. His compensation was the yuan wage, inflation-eroded, barely enough to survive. The surplus went to Beijing. Beijing bought U.S. debt. And the United States, in turn, used the money to fund everything from military bases to tax cuts to consumer subsidies.</p>
+
+<p>It is hard to think of a more elegant system of wealth transfer.</p>
+
+<div class="data-box">
+<h4>The Circle of the Dollar</h4>
+<table>
+  <tr><th>Step</th><th>What Happens</th></tr>
+  <tr><td>1</td><td>Jianguo works 12 hours to make sneakers worth $120</td></tr>
+  <tr><td>2</td><td>He is paid $1.65 for his labor</td></tr>
+  <tr><td>3</td><td>The sneaker is shipped to America and sold for $120</td></tr>
+  <tr><td>4</td><td>The $120 enters China's trade surplus as dollars</td></tr>
+  <tr><td>5</td><td>China cannot spend the dollars freely, so it buys U.S. bonds</td></tr>
+  <tr><td>6</td><td>America gets $120 of cheap financing to fund its government</td></tr>
+  <tr><td>7</td><td>Jianguo's village gets: polluted water, bad air, and a used-up workforce</td></tr>
+  <tr><td>8</td><td>The cycle repeats. Every day. For thirty years.</td></tr>
+</table>
+<div class="note">This is not a secret. This is how the system was designed.</div>
+</div>
+
+<h2 class="section-head">Who Really Won?</h2>
+
+<p>The standard telling of this story goes like this: China won. China lifted 800 million people out of poverty. China became the world's factory. China is now a superpower rivaling the United States.</p>
+
+<p>That version is true at the national level, in the aggregate GDP statistics, in the skyscrapers of Shanghai and Shenzhen. But it is less true in the villages, where the people who actually did the work are now middle-aged, exhausted, and invisible.</p>
+
+<p>Jianguo has never been to Shanghai. He has never seen a skyscraper. He lives in a rented room with a concrete floor, a single light bulb, and a framed photograph of his wife. He owns a smartphone, but it is a cheap Xiaomi model from five years ago, the screen cracked. He sends money to his daughter, who is studying nursing in a provincial city &mdash; the one bright spot in his story, the one investment that might pay off in the next generation.</p>
+
+<p>"I do not think about politics," he says. "I think about my daughter. I think about whether I can work another ten years before my back gives out completely."</p>
+
+<p>The question of winners and losers is more complicated than any single story can capture. China's economic rise has been real. Millions have been lifted from extreme poverty. But the distribution of the costs has been brutally uneven. The villagers paid. The cities gained. The West consumed. And the system that made it all possible &mdash; the cheap yuan, the suppressed wages, the environmental sacrifice, the endless recycling of dollars into U.S. Treasury bonds &mdash; was accepted by everyone because it benefited everyone who mattered.</p>
+
+<h2 class="section-head">The System That Eats Itself</h2>
+
+<p>The problem with this arrangement is that it cannot last forever, because it eventually destroys the thing that makes it possible: the village.</p>
+
+<p>The village runs out of young people. The river runs out of capacity to absorb poison. The laborers' bodies run out of years. And the dollar, which has been the world's reserve currency for eighty years, cannot remain the world's reserve currency forever if the people producing the goods no longer believe in it.</p>
+
+<p>That is where the story gets interesting.</p>
+
+<p>For decades, China has been slowly reducing its holdings of U.S. Treasury bonds. From $1.3 trillion in 2013 to $760 billion today. It has been buying gold instead &mdash; 225 tonnes in 2023, 145 tonnes in 2024, accelerating. It has been signing bilateral trade agreements in yuan. It has been building alternative payment systems.</p>
+
+<p>The shift is gradual, but the direction is unmistakable. The village is waking up.</p>
+
+<div class="pullquote">
+  &ldquo;The peasants paid the price of industrialization. The cities consumed the benefits. The West consumed the goods. The bonds paid for America's deficits. Everyone got what they wanted, except the peasants.&rdquo;
+  <span class="attribution">&mdash; Chinese economist, anonymous, on the reform era</span>
+</div>
+
+<h2 class="section-head">What a Fair System Would Look Like</h2>
+
+<p>A fair system would not have asked Jianguo to work twenty-two years in exchange for a cracked smartphone screen and a dead wife from the factory air. A fair system would have let the yuan rise naturally, so that Jianguo's wages bought more in real terms. A fair system would have let China spend its dollar surplus on things that improved villagers' lives &mdash; hospitals, schools, clean water, environmental restoration &mdash; instead of funneling it into American government bonds.</p>
+
+<p>But a fair system was never the point. The point was growth &mdash; as fast as possible, by whatever means necessary. The logic was always that the next generation would benefit from the sacrifices of this one. Jianguo's parents sacrificed so that he could have factory work. Jianguo is sacrificing so that his daughter can be a nurse. And his daughter, perhaps, will sacrifice so that her children can be something else entirely.</p>
+
+<p>It is a kind of faith. A belief that the sacrifice is meaningful, that the arc bends toward something better. But even faith has its limits.</p>
+
+<p>Jianguo will turn 50 in four years. He has no pension. No savings to speak of. He has his daughter, and his electric scooter, and his rented room, and his memories of a river that once ran clear.</p>
+
+<p>When the foreign journalists come, as they occasionally do, the factory management picks the younger, healthier workers to speak to them. Jianguo is not chosen. He is already too old, too visibly worn, too honest.</p>
+
+<p>"They do not want people to see what thirty years in a Chinese factory looks like," he says. "It is bad for the brand."</p>
+
+<p>He laughs. It is not a happy sound.</p>
+
+<hr class="rule">
+
+<p><em>Sources: Interviews with factory workers in Dongguan, Guangdong Province, 2024&ndash;2025; U.S. Treasury International Capital (TIC) data, 2000&ndash;2026; People's Bank of China, Annual Report, 2025; World Bank, &ldquo;China: Systematic Country Diagnostic,&rdquo; 2024; U.S.-China Economic and Security Review Commission, annual reports; MIT research on supply chain labor conditions; National Bureau of Statistics of China, wage and environmental data, 2000&ndash;2025.</em></p>
+
+<p><em>Names and identifying details have been changed to protect the source.</em></p>
+
+<p><em>Write to AL at yeo@sky-db.com</em></p>
+
+<div class="article-footer">
+  AL STREET JOURNAL &nbsp;|&nbsp; July 4, 2026 &nbsp;|&nbsp; Global Markets &amp; Finance<br>
+  &copy; 2026 AL Analytics. Not affiliated with Dow Jones.
+</div>
+
+</div>
+
+</body>
+</html>
