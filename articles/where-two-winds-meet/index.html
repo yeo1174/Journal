@@ -218,6 +218,33 @@
     line-height: 1.6;
   }
 
+  .audio-player {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 16px 20px;
+    margin: 0 0 24px;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    border-radius: 4px;
+  }
+  .audio-player .audio-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9aa0c8;
+    margin-bottom: 10px;
+  }
+  .audio-player audio {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .audio-player .audio-note {
+    font-size: 12px;
+    color: #b8bcd6;
+  }
+  .audio-player a {
+    color: #fff;
+  }
+
   @media (max-width: 600px) {
     .headline { font-size: 28px; }
     .masthead { font-size: 32px; }
@@ -246,6 +273,13 @@
 
 <div class="byline">By AL</div>
 <div class="dateline">KUALA LUMPUR &mdash; Twice a year, the sky over the Malay Peninsula changes direction.</div>
+
+<div class="audio-player">
+  <div class="audio-label">Listen to this article</div>
+  <audio controls preload="none" src="voice-part1.mp3">Your browser does not support audio. <a href="voice-part1.mp3">Download Part 1</a></audio>
+  <audio controls preload="none" src="voice-part2.mp3">Your browser does not support audio. <a href="voice-part2.mp3">Download Part 2</a></audio>
+  <div class="audio-note">AI narration &mdash; Part 1 (8 min) &middot; Part 2 (4 min)</div>
+</div>
 
 <p>From November to March, the northeast monsoon arrives &mdash; winds born over Siberia and the South China Sea, gathering rain as they cross open water, slamming into the east coast with a fury that has names of its own: <em>taufan</em>, <em>banjir</em>, <em>angin kencang</em>. Kelantan and Terengganu know this wind better than any map. The sea rises. Fishing boats stay home. The rain does not ask permission.</p>
 
